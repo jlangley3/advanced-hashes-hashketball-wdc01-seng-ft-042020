@@ -159,14 +159,11 @@ memo
 end
 memo
 end
-     
 stats_array
-
 start = stats_array.index("Mason Plumlee")
         rebounds_position = start + 4
          number_of_rebounds = stats_array[rebounds_position]
 number_of_rebounds
-
 end
 
 

@@ -127,6 +127,18 @@ def game_hash
 end
 
 
+
+def team
+
+
+
+
+
+
+
+
+
+
 def team_colors(name_of_team)
   game_hash
   team_color_array = []
@@ -153,8 +165,7 @@ leveltwo_array.pop
            team_color_array << team_color_v   
 end
 end
-
- team_colors_hash = {team_color_array[0] => team_color_array[1], team_color_array[2] => team_color_array[3]}
+team_colors_hash = {team_color_array[0] => team_color_array[1], team_color_array[2] => team_color_array[3]}
 
 team_colors_hash[name_of_team]
 end

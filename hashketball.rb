@@ -139,12 +139,9 @@ leveltwo_array = []
 # key # team_color_players
  # value #nets_horns_bw_tp_arrayofplayers
         leveltwo_array << {key => value}    
-    
 memo
 end
 memo
-
-
 end
 leveltwo_array.uniq!
 leveltwo_array.delete_at(2)
@@ -161,8 +158,7 @@ end
 
 team_colors_hash[name_of_team]
 end
-end
-end
+e
 
 
 

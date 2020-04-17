@@ -129,6 +129,7 @@ end
 
 
 def team_names
+ game_hash
  
  #returned an Array of the team names. 
 end

@@ -128,7 +128,7 @@ end
 
 
 
-def team_name
+def team_names
 
 
 

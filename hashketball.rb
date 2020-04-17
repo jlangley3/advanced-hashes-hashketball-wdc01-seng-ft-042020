@@ -129,7 +129,7 @@ end
 
 
 
-def big_show_rebounds
+def big_shoe_rebounds
    game_hash
   stats_array = []
           game_hash.reduce({}) do |memo, (home_away, second_layer)|

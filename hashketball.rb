@@ -129,9 +129,41 @@ end
 
 
 def player_stats(name_of_player)
-  
-  #returns a hash of player stats
+   game_hash
+answer = {}
+leveltwo_array = []
+          game_hash.reduce({}) do |memo, (home_away, second_layer)|
+ #puts memo #empty hash
+               second_layer.reduce({}) do |memo, (key, value)|
+# key # team_color_players
+ #value #nets_horns_bw_tp_arrayofplayers
+             if value == "Brooklyn Nets"   
+      elsif value == "Charlotte Hornets" 
+     else
+       leveltwo_array << value 
 end
+    
+memo
+end
+memo
+end
+     leveltwo_array.delete_at(0)
+           leveltwo_array.delete_at(1)
+
+     leveltwo_array.flatten!
+
+      leveltwo_array.each_index do |index|
+if name_of_player == leveltwo_array[index][:player_name]   
+answer = leveltwo_array[index]
+         puts answer
+
+end
+end
+answer
+end
+
+  #returns a hash of player stats
+
 
 
 

@@ -128,6 +128,13 @@ end
 
 
 
+def player_numbers(name_of_team)
+  game_hash
+#returns an array of jersey number for that team
+end
+
+
+
 def team_names
  game_hash
   team_names_array = []

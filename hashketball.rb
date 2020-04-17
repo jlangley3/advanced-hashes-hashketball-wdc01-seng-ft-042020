@@ -154,7 +154,9 @@ leveltwo_array.pop
            team_color_array << team_color_v   
 end
 end
-
+team_color_array.delete_at(1)
+team_color_array.pop
+    team_color_array
  #returned an Array of the team names. 
 end
 

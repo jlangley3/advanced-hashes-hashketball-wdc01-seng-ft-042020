@@ -130,7 +130,43 @@ end
 
 
 def big_show_rebounds
-  game_hash
+   game_hash
+  stats_array = []
+          game_hash.reduce({}) do |memo, (home_away, second_layer)|
+ #puts memo #empty hash
+               second_layer.reduce({}) do |memo, (key, value)|
+# key # team_color_players
+# value #nets_horns_bw_tp_arrayofplayers
+    if value == "Brooklyn Nets"   
+      elsif value == "Charlotte Hornets" 
+     else
+  value.each do |key2, value2|
+#key2 # black, white, names and stats
+#value2 #=nothing
+
+   if key2 == "White"   
+      elsif key2 == "Black" 
+         elsif key2 == "Turquoise"
+             elsif key2 == "Purple"
+     else
+       key2.each do |key3, value3|
+                  stats_array << value3
+end
+end
+end
+end
+memo
+end
+memo
+end
+     
+stats_array
+
+start = stats_array.index("Mason Plumlee")
+        rebounds_position = start + 4
+         number_of_rebounds = stats_array[rebounds_position]
+number_of_rebounds
+
 end
 
 

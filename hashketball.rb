@@ -191,9 +191,9 @@ end
               end
               end
 if name_of_team == "Brooklyn Nets"
-                  puts nets_number_array 
-elsif name_of_team == "Charlotte Hornets"     
-            puts hornets_number_array 
+                  return nets_number_array 
+else name_of_team == "Charlotte Hornets"     
+            return hornets_number_array 
 
 end
 end

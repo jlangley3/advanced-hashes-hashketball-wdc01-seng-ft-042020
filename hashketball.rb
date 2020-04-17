@@ -173,9 +173,6 @@ team_colors_hash[name_of_team]
 end
 
 
-
-
-
 def shoe_size(name_of_player)
  game_hash
   stats_array = []

@@ -318,10 +318,9 @@ end
 memo
 end
      start = stats_array.index(name_of_player)
-        points_position = start + 2
-         player_points = stats_array[points_position]
-puts player_points
-player_points
+        shoe_position = start + 2
+         shoe_size = stats_array[shoe_position]
+shoe_size
 end
 
 

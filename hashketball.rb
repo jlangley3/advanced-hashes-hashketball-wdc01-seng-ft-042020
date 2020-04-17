@@ -162,7 +162,7 @@ leveltwo_array.delete_at(2)
 leveltwo_array.pop
 
          leveltwo_array.each do |k , v|
-          hash = k.each do |name_color , team_color_v|
+          k.each do |name_color , team_color_v|
         
            team_color_array << team_color_v   
 end

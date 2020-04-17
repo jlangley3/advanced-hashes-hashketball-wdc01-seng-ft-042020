@@ -130,8 +130,75 @@ end
 
 def player_numbers(name_of_team)
   game_hash
-#returns an array of jersey number for that team
+nets_hash = {}
+hornets_hash = {}
+teams_array = []
+nets_number_array = []
+hornets_number_array = []
+leveltwo_array = []
+          game_hash.reduce({}) do |memo, (home_away, second_layer)|
+ #puts memo #empty hash
+               second_layer.reduce({}) do |memo, (key, value)|
+# key # team_color_players
+ # value #nets_horns_bw_tp_arrayofplayers
+        leveltwo_array << {key => value}    
+    
+memo
 end
+memo
+end
+
+leveltwo_array.delete_at(1)
+leveltwo_array.delete_at(3)
+
+         leveltwo_array.each do |teamnplayers, nothin|
+             teamnplayers.each do |twolevel, threelevel|
+      
+           teams_array << threelevel
+           
+       end
+  end 
+   nets_hash = {teams_array[0] => teams_array[1]}      #nets
+       hornets_hash = {teams_array[2] => teams_array[3]} #hornets
+              
+nets_hash.each do | team_n, stat| 
+                        
+            #team_n #team names
+                #stat # stats
+                      stat.each do | stats, nothing| 
+                 #stats # stats
+#value2 is nothing
+                       stats.each do | stat_key, value_nums| 
+                       if stat_key == :number
+            nets_number_array  << value_nums
+end
+end
+              end
+              end
+                  
+             hornets_hash.each do | team_n, stat|           
+            #team_n #team names
+                #stat # stats
+        
+                      stat.each do | stats, nothing| 
+                 #stats # stats
+#value2 is nothing
+                       stats.each do | stat_key, value_nums| 
+                       if stat_key == :number
+            hornets_number_array  << value_nums
+end
+end
+              end
+              end
+if name_of_team == "Brooklyn Nets"
+                  puts nets_number_array 
+elsif name_of_team == "Charlotte Hornets"     
+            puts hornets_number_array 
+
+end
+end
+#returns an array of jersey number for that team
+
 
 
 

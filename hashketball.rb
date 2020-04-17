@@ -130,7 +130,31 @@ end
 
 def team_names
  game_hash
+  team_color_array = []
+team_colors_hash = {}
+leveltwo_array = []
+          game_hash.reduce({}) do |memo, (home_away, second_layer)|
+ #puts memo #empty hash
  
+               second_layer.reduce({}) do |memo, (key, value)|
+# key # team_color_players
+ # value #nets_horns_bw_tp_arrayofplayers
+        leveltwo_array << {key => value}    
+memo
+end
+memo
+end
+leveltwo_array.uniq!
+leveltwo_array.delete_at(2)
+leveltwo_array.pop
+
+         leveltwo_array.each do |k , v|
+          k.each do |name_color , team_color_v|
+        
+           team_color_array << team_color_v   
+end
+end
+
  #returned an Array of the team names. 
 end
 

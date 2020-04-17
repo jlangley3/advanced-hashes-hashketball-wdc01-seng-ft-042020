@@ -128,7 +128,10 @@ end
 
 
 
-def 
+def player_stats(name_of_player)
+  
+  #returns a hash of player stats
+end
 
 
 
